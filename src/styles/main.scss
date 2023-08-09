@@ -1,0 +1,34 @@
+@import "./reset";
+@import "./variables/var";
+@import "./variables/fonts";
+
+body {
+  font-family: $font-roboto;
+  font-weight: normal;
+  background-color: var(--body-bg-default);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-rubik;
+}
+
+.title-1 {
+  font-size: $font-size-m;
+  color: var(--text-secondary-color-default);
+}
+
+.title-2 {
+  font-size: $font-size-l;
+  color: var(--text-primary-color-default);
+  line-height: auto;
+}
+
+.test {
+  background-color: white;
+  color: black;
+}
