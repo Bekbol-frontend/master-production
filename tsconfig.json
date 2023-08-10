@@ -11,10 +11,15 @@
     "baseUrl": "./",
     "paths": {
       "@components/*": ["src/components/*"],
+      "@components": ["src/components/index.tsx"],
       "@pages/*": ["src/pages/*"],
+      "@pages": ["src/pages/index.tsx"],
       "@context/*": ["src/context/*"],
+      "@context": ["src/context/index.tsx"],
       "@hooks/*": ["src/hooks/*"],
+      "@hooks": ["src/hooks/index.tsx"],
       "@store/*": ["src/store/*"],
+      "@store": ["src/store/index.tsx"],
       "@model/*": ["src/model/*"],
       "@helpers/*": ["src/helpers/*"],
       "@styles/*": ["src/styles/*"]
