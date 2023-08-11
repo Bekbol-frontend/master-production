@@ -10,19 +10,20 @@
 
     "baseUrl": "./",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@components": ["src/components/index.tsx"],
+      "@app/*": ["src/app/*"],
+      "@app": ["src/app/index.tsx"],
+      "@entities/*": ["src/entities/*"],
+      "@entities": ["src/entities/index.tsx"],
+      "@features/*": ["src/features/*"],
+      "@features": ["src/features/index.tsx"],
       "@pages/*": ["src/pages/*"],
       "@pages": ["src/pages/index.tsx"],
-      "@context/*": ["src/context/*"],
-      "@context": ["src/context/index.tsx"],
-      "@hooks/*": ["src/hooks/*"],
-      "@hooks": ["src/hooks/index.tsx"],
-      "@store/*": ["src/store/*"],
-      "@store": ["src/store/index.tsx"],
-      "@model/*": ["src/model/*"],
-      "@helpers/*": ["src/helpers/*"],
-      "@styles/*": ["src/styles/*"]
+      "@processes/*": ["src/processes/*"],
+      "@processes": ["src/processes/index.tsx"],
+      "@shared/*": ["src/shared/*"],
+      "@shared": ["src/shared/index.tsx"],
+      "@widgets/*": ["src/widgets/*"],
+      "@widgets": ["src/widgets/index.tsx"]
     },
 
     "allowSyntheticDefaultImports": true,

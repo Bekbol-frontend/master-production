@@ -7,15 +7,16 @@ export interface BuildPaths {
   build: string;
   html: string;
   devServer: string;
+}
 
-  components: string;
+export interface BuildAlias {
+  app: string;
+  entities: string;
+  features: string;
   pages: string;
-  styles: string;
-  store: string;
-  context: string;
-  hooks: string;
-  model: string;
-  helpers: string;
+  shared: string;
+  widgets: string;
+  processes: string;
 }
 
 export interface BuildOptions {
@@ -23,6 +24,7 @@ export interface BuildOptions {
   paths: BuildPaths;
   isDev: boolean;
   port: number;
+  alias: BuildAlias;
 }
 
 export interface BuildENV {

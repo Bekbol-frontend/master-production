@@ -2,22 +2,20 @@ import webpack from "webpack";
 import { BuildOptions } from "./@types/configType";
 
 export function buildResolves(options: BuildOptions): webpack.ResolveOptions {
-  const { paths } = options;
+  const { alias } = options;
 
-  const { components, pages, context, hooks, store, styles, model, helpers } =
-    paths;
+  const { app, entities, features, pages, processes, shared, widgets } = alias;
 
   return {
     extensions: ["", ".tsx", ".ts", ".js", ".jsx"],
     alias: {
-      "@components": components,
+      "@app": app,
+      "@entities": entities,
+      "@features": features,
       "@pages": pages,
-      "@context": context,
-      "@hooks": hooks,
-      "@store": store,
-      "@model": model,
-      "@helpers": helpers,
-      "@styles": styles,
+      "@processes": processes,
+      "@shared": shared,
+      "@widgets": widgets,
     },
   };
 }

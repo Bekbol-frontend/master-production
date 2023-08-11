@@ -1,7 +1,11 @@
 import path from "path";
 import webpack from "webpack";
 
-import { BuildENV, BuildPaths } from "./config/build/@types/configType";
+import {
+  BuildAlias,
+  BuildENV,
+  BuildPaths,
+} from "./config/build/@types/configType";
 import { buildWebpackConfig } from "./config/build/buildWebpackConfig";
 
 export default (env: BuildENV) => {
@@ -12,15 +16,16 @@ export default (env: BuildENV) => {
     build: path.resolve(__dirname, "build"),
     html: path.resolve(__dirname, "public", "index.html"),
     devServer: path.resolve(__dirname, "build"),
+  };
 
-    components: path.resolve(__dirname, "src/components/"),
-    pages: path.resolve(__dirname, "src/pages/"),
-    styles: path.resolve(__dirname, "src/styles/"),
-    store: path.resolve(__dirname, "src/store/"),
-    context: path.resolve(__dirname, "src/context/"),
-    hooks: path.resolve(__dirname, "src/hooks/"),
-    model: path.resolve(__dirname, "src/model/"),
-    helpers: path.resolve(__dirname, "src/helpers/"),
+  const alias: BuildAlias = {
+    app: path.resolve(__dirname, "src/app"),
+    entities: path.resolve(__dirname, "src/entities"),
+    features: path.resolve(__dirname, "src/features"),
+    pages: path.resolve(__dirname, "src/pages"),
+    processes: path.resolve(__dirname, "src/processes"),
+    shared: path.resolve(__dirname, "src/shared"),
+    widgets: path.resolve(__dirname, "src/widgets"),
   };
 
   const mode = env.mode || "development";
@@ -32,6 +37,7 @@ export default (env: BuildENV) => {
     paths,
     isDev,
     port,
+    alias,
   });
 
   return config;
