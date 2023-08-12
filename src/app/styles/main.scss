@@ -1,6 +1,6 @@
-@import "./reset";
+@import "./reset/reset";
 @import "./variables/var";
-@import "./variables/fonts";
+
 
 body {
   font-family: $font-roboto;

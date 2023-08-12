@@ -1,19 +1,16 @@
-import { classNames } from "@shared";
+import { Link } from "react-router-dom";
+import { AppRouter } from "./providers";
+
 
 function App() {
   return (
-    <div>
-      <h1 className="title">App</h1>
-      <p
-        className={classNames("desc", { active: true, hovered: false }, [
-          "cls1",
-          "cls2",
-        ])}
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea officia ab
-        placeat explicabo nostrum. Vel doloribus suscipit earum eum accusantium.
-      </p>
-    </div>
+    <>
+      <div>
+        <Link to="/">home</Link>
+        <Link to="/about">about</Link>
+      </div>
+      <AppRouter />
+    </>
   );
 }
 

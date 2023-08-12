@@ -21,7 +21,7 @@
       "@processes/*": ["src/processes/*"],
       "@processes": ["src/processes/index.tsx"],
       "@shared/*": ["src/shared/*"],
-      "@shared": ["src/shared/index.tsx"],
+      "@shared": ["src/shared/lib/index.ts"],
       "@widgets/*": ["src/widgets/*"],
       "@widgets": ["src/widgets/index.tsx"]
     },
