@@ -31,5 +31,13 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
     ],
   };
 
-  return [typescriptLoader, cssLoaders];
+  const fileLoader = {
+    test: /\.(png|jpe?g|gif|svg)$/i,
+    loader: "file-loader",
+    options: {
+      name: 'assets/images/[name].[ext]',
+    },
+  };
+
+  return [typescriptLoader, cssLoaders, fileLoader];
 }

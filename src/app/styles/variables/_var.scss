@@ -1,8 +1,17 @@
+// fonts ----------
 $font-roboto: "Roboto", sans-serif;
 $font-rubik: "Rubik", sans-serif;
 
 $font-size-m: 16px;
 $font-size-l: 24px;
+
+// box-shadow ----------
+$box-shadow: 1px 3px 11px -1px rgba(131, 131, 131, 0.17);
+
+// color-all
+$color-all: rgba(71, 147, 255, 1);
+
+// DARK-LIGHT ----------
 
 $body-bg-dark: #000;
 $body-bg-light: #fff;
@@ -10,36 +19,56 @@ $body-bg-light: #fff;
 $card-bg-dark: #2e3035;
 $card-bg-light: rgba(71, 147, 255, 0.2);
 
-$text-primary-color-dark: rgb(103, 164, 250);
-$text-primary-color-light: rgb(24, 108, 226);
+$header-bg-dark: #22252f;
+$header-bg-light: rgba(138, 187, 255, 0.2);
+
+$text-primary-color-dark: rgb(241, 247, 255);
+$text-primary-color-light: rgb(4, 92, 159);
 
 $text-secondary-color-dark: #fff;
 $text-secondary-color-light: #000;
 
+$hover-app-link-bg-dark: #1c6a6a;
+$hover-app-link-bg-light: rgba(82, 83, 85, 0.1);
+
 :root {
-  // background - body
+  // background-body
   --body-bg-dark: #{$body-bg-dark};
   --body-bg-light: #{$body-bg-light};
   --body-bg-default: var(--body-bg-light);
 
   // -------------
 
-  // background - card
+  // background-header
+  --header-bg-dark: #{$header-bg-dark};
+  --header-bg-light: #{$header-bg-light};
+  --header-bg-default: var(--header-bg-light);
+
+  // -------------
+
+  // background-card
   --card-bg-dark: #{$card-bg-dark};
   --card-bg-light: #{$card-bg-light};
   --card-bg-default: var(--card-bg-light);
 
   // -------------
 
-  // color - primary
+  // color-primary
   --text-primary-color-dark: #{$text-primary-color-dark};
   --text-primary-color-light: #{$text-primary-color-light};
   --text-primary-color-default: var(--text-primary-color-light);
 
   // -------------
 
-  // color - secondary
+  // color-secondary
   --text-secondary-color-dark: #{$text-secondary-color-dark};
   --text-secondary-color-light: #{$text-secondary-color-light};
   --text-secondary-color-default: var(--text-secondary-color-light);
+
+  // -------------
+
+  // hover-app-bg
+  --hover-app-link-bg-dark: #{$hover-app-link-bg-dark};
+  --hover-app-link-bg-light: #{$hover-app-link-bg-light};
+  --hover-app-link-bg-default: var(--hover-app-link-bg-light);
 }

@@ -1,0 +1,13 @@
+.appLink {
+  color: var(--text-secondary-color-default);
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 7px 12px;
+  border-radius: 3px;
+  transition: background-color 200ms, color 200ms;
+
+  &:hover,
+  &.active {
+    background-color: var(--hover-app-link-bg-default);
+  }
+}

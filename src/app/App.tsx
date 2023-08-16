@@ -1,14 +1,13 @@
-import { Link } from "react-router-dom";
+import { Header } from "@widgets/header";
 import { AppRouter } from "./providers";
-
+import { useTheme } from "@shared/theme";
 
 function App() {
+  useTheme();
+
   return (
     <>
-      <div>
-        <Link to="/">home</Link>
-        <Link to="/about">about</Link>
-      </div>
+      <Header />
       <AppRouter />
     </>
   );
