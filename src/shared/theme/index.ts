@@ -17,6 +17,7 @@ export function useTheme() {
       "text-primary-color",
       "text-secondary-color",
       "hover-app-link-bg",
+      "sidebar-bg",
     ];
 
     elements.forEach((el) => {

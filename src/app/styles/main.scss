@@ -1,7 +1,6 @@
 @import "./reset/reset";
 @import "./variables/var";
 
-
 body {
   font-family: $font-roboto;
   font-weight: normal;
@@ -17,18 +16,17 @@ h6 {
   font-family: $font-rubik;
 }
 
-.title-1 {
-  font-size: $font-size-m;
-  color: var(--text-secondary-color-default);
+// main-container----------
+
+.main-content {
+  margin-left: $sidebar-width;
+  min-height: calc(100vh - $header-height);
+  height: 100%;
+  padding: 20px;
+  border: 1px solid red;
+  transition: margin 200ms ease-in;
 }
 
-.title-2 {
-  font-size: $font-size-l;
-  color: var(--text-primary-color-default);
-  line-height: auto;
-}
-
-.test {
-  background-color: white;
-  color: black;
+.main-content.main-content-collapsed {
+  margin-left: $sidebar-min-width !important;
 }

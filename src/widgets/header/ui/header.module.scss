@@ -1,9 +1,16 @@
-@import "../../../app/styles/variables/_var.scss";
+@import "@app/styles/variables/_var.scss";
 
 .header {
-  padding: 20px 0px;
+  height: $header-height;
+  padding: 20px;
   background-color: var(--header-bg-default);
+  backdrop-filter: blur(20px);
   box-shadow: $box-shadow;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 999999999999999999999999999999;
 }
 
 .headerInner {

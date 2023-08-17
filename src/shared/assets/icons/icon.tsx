@@ -1,7 +1,7 @@
-import React from "react";
+import { IconType } from "@shared/models";
 
 interface IProps {
-  icon: "theme-icon";
+  icon: IconType;
 }
 
 export function IconsSVG({ icon }: IProps) {

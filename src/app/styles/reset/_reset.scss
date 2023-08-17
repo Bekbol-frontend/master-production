@@ -53,3 +53,24 @@ li {
   margin: 0px auto;
   padding: 0px 20px;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(231, 231, 231);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(159, 159, 159);
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(121, 121, 121);
+}
